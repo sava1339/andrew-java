@@ -86,7 +86,7 @@ function App() {
                         <div className="photo">
                             <img className="main-photo" src={httpURL + "photo.webp"} alt=""/>
                             <div className="text-content">
-                                <h2 className="text-name robo-slab">Андрей Дремковым</h2>
+                                <h2 className="text-name robo-slab">Андрей Дремков</h2>
                                 <p className="text-desc">Приятно, граждане, наблюдать, как ключевые особенности структуры проекта превращены в посмешище, хотя само их существование приносит несомненную пользу обществу.</p>
                             </div>
                         </div>
