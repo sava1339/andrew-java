@@ -393,13 +393,13 @@
     width: 100%;
   }
   .text-block p{
-    font-size: 25px;
+    font-size: 24px;
   }
   .contact-prew{
     font-size: 30px;
   }
   .contacts p{
-    font-size: 25px;
+    font-size: 24px;
   }
 }
 @media screen and (max-width: 1200px) and (min-width: 840px){
@@ -426,6 +426,7 @@
   }
   .text-block{
     max-width: 80%;
+    padding-left: 0.5em;
   }
   .top-dec-one{
     right: 100px;
@@ -476,6 +477,9 @@
 @media screen and (max-width: 630px) {
   .work-experience{
     margin-top: 4em !important;
+  }
+  .contacts-block{
+    margin-left: 1em;
   }
   .main-photo{
     width: 60%;
@@ -530,9 +534,6 @@
   }
   .work-title-dev{
     top: 35px;
-  }
-  .text-block{
-    width: 65%;
   }
   .text-name{
     font-size: 18px;
