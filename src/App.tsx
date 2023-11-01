@@ -8,6 +8,7 @@ import decOne from './assets/dec-one.svg'
 import decThree from './assets/dec-three.svg'
 import decTwo from './assets/dec-two.svg'
 import {useEffect, useState} from "react";
+import { httpURL } from './http/http'
 
 interface portfolio {
     id:number,
@@ -84,7 +85,7 @@ function App() {
                             <h1 className="work-title-dev">Developer</h1>
                         </div>
                         <div className="photo">
-                            <img className="main-photo" src={photo} alt=""/>
+                            <img className="main-photo" src={httpURL + "photo.webp"} alt=""/>
                             <div className="text-content">
                                 <h2 className="text-name robo-slab">Андрей Дремковым</h2>
                                 <p className="text-desc">Приятно, граждане, наблюдать, как ключевые особенности структуры проекта превращены в посмешище, хотя само их существование приносит несомненную пользу обществу.</p>
@@ -118,9 +119,9 @@ function App() {
                             <div className="portfolio-list hidden">
                                 {portfolioList.map((el:portfolio)=>
                                 <div key={el.id} className="portfolio-item">
-                                    <div style={{background:`url(http://localhost:3000/${el.img})`}} className="portfolio-item-image"></div>
+                                    <div style={{background:`url(${httpURL}${el.img})`}} className="portfolio-item-image"></div>
                                     <div className="portfolio-item-back-image black"></div>
-                                    <div style={{background:`url(http://localhost:3000/${el.img})`}} className="portfolio-item-back-image"></div>
+                                    <div style={{background:`url(${httpURL}${el.img})`}} className="portfolio-item-back-image"></div>
                                     
                                     <p className="portfolio-item-name">{el.name}</p>
                                     <p className="portfolio-item-desc">{el.desc}</p>
