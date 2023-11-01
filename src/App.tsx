@@ -1,6 +1,5 @@
 import './App.css'
 import React from 'react'
-import photo from './assets/photo.webp'
 import slideDown from './assets/slide-down.svg'
 import slideUp from './assets/slide-up.svg'
 import expWorkLogo from './assets/expWorkLogo.svg'
